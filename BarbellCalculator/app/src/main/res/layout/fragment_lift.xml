@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="fragments.LiftFragment"
+    android:background="@color/light_gray">
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/middleLiftGuide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.75" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/middleThirtyFiveGuide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.585" />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/middleTenGuide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.455" />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/middleTwoHalfGuide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.3255" />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/middleTotalGuide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.225" />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/middleBarSizeGuide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.03" />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/middleRadioGuide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.135" />
+    <TextView
+        android:id="@+id/fortyfivelabel"
+        style="@style/SecondaryWeightText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/forty_five"
+        app:layout_constraintStart_toStartOf="@+id/middleGuide"
+        tools:layout_editor_absoluteY="431dp"
+        app:layout_constraintTop_toBottomOf="@+id/middleThirtyFiveGuide"
+        />
+
+    <TextView
+        android:id="@+id/thirtyfivelabel"
+        style="@style/SecondaryWeightText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/middleThirtyFiveGuide"
+        android:text="@string/thirty_five"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="431dp" />
+
+    <EditText
+        android:id="@+id/limitFortyFive"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintBaseline_toBaselineOf="@+id/fortyfivelabel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/fortyfivelabel"
+        style="@style/SecondaryWeightText"/>
+
+    <EditText
+        android:id="@+id/limitThirtyFive"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintBaseline_toBaselineOf="@+id/thirtyfivelabel"
+        app:layout_constraintEnd_toStartOf="@+id/middleGuide"
+        app:layout_constraintStart_toEndOf="@+id/thirtyfivelabel"
+        style="@style/SecondaryWeightText"/>
+
+    <EditText
+        android:id="@+id/limitTwentyFive"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintBaseline_toBaselineOf="@+id/twentyfivelabel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/twentyfivelabel"
+        style="@style/SecondaryWeightText"/>
+
+    <TextView
+        android:id="@+id/twentyfivelabel"
+        style="@style/SecondaryWeightText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/twenty_five"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@+id/middleGuide"
+        tools:layout_editor_absoluteY="336dp"
+        app:layout_constraintTop_toBottomOf="@+id/middleTenGuide"
+        />
+
+    <EditText
+        android:id="@+id/limitTen"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tenlabel"
+        app:layout_constraintEnd_toStartOf="@+id/middleGuide"
+        app:layout_constraintStart_toEndOf="@+id/tenlabel"
+        style="@style/SecondaryWeightText"/>
+
+    <TextView
+        android:id="@+id/tenlabel"
+        style="@style/SecondaryWeightText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/middleTenGuide"
+        android:text="@string/ten"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="336dp" />
+
+    <EditText
+        android:id="@+id/limitFive"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintBaseline_toBaselineOf="@+id/fivelabel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/fivelabel"
+        style="@style/SecondaryWeightText"/>
+
+    <TextView
+        android:id="@+id/fivelabel"
+        style="@style/SecondaryWeightText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/five"
+        app:layout_constraintStart_toStartOf="@+id/middleGuide"
+
+        app:layout_constraintTop_toBottomOf="@+id/middleTwoHalfGuide" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/middleGuide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <TextView
+        android:id="@+id/barLabel"
+        style="@style/SecondaryHeaderText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/bar_label"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/middleBarSizeGuide" />
+
+    <RadioGroup
+        android:id="@+id/barRadioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/barLabel">
+
+        <RadioButton
+            android:id="@+id/twentyfiveweight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/forty_four"
+            style="@style/BodyText"/>
+
+        <RadioButton
+            android:id="@+id/thirtythreeweight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/thirty_three"
+            style="@style/BodyText"/>
+
+        <RadioButton
+            android:id="@+id/fortyfourweight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/twenty_five"
+            style="@style/BodyText"/>
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/customLabel"
+        style="@style/BodyText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/merriweather_sans"
+        android:text="@string/customize"
+        app:layout_constraintBottom_toTopOf="@+id/middleRadioGuide"
+        app:layout_constraintStart_toEndOf="@+id/middleGuide"
+        app:layout_constraintTop_toTopOf="@+id/middleBarSizeGuide" />
+
+    <EditText
+        android:id="@+id/customBarNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+
+        android:inputType="numberDecimal"
+        app:layout_constraintBaseline_toBaselineOf="@+id/customLabel"
+        app:layout_constraintStart_toEndOf="@+id/customLabel"
+        style="@style/BodyText"/>
+
+    <TextView
+        android:id="@+id/numberOfWeights"
+        style="@style/SecondaryHeaderText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/enter_total_lift_plate"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/middleTotalGuide" />
+
+
+    <TextView
+        android:id="@+id/twohalflabel"
+        style="@style/SecondaryWeightText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/two_half"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/middleTwoHalfGuide" />
+
+    <EditText
+        android:id="@+id/limitTwoHalf"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintBaseline_toBaselineOf="@+id/twohalflabel"
+        app:layout_constraintEnd_toStartOf="@+id/middleGuide"
+        app:layout_constraintStart_toEndOf="@+id/twohalflabel"
+        style="@style/SecondaryWeightText"/>
+
+    <TextView
+        android:id="@+id/weightTargetLabel"
+        style="@style/SecondaryHeaderText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/lift_total"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/middleLiftGuide" />
+
+    <EditText
+        android:id="@+id/weightTarget"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        app:layout_constraintBaseline_toBaselineOf="@+id/weightTargetLabel"
+        app:layout_constraintStart_toEndOf="@+id/weightTargetLabel"
+        style="@style/SecondaryWeightText"
+        android:focusable="false"/>
+
+    <RadioGroup
+        android:id="@+id/includingBarGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/weightTargetLabel">
+
+        <RadioButton
+            android:id="@+id/includeBarRadio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/include_bar_menu"
+            style="@style/BodyText"/>
+
+        <RadioButton
+            android:id="@+id/notIncludeBarRadio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/not_include"
+            style="@style/BodyText"/>
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/saveLiftAsExercise"
+        style="@style/Widget.AppTheme.Button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/save_lift"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:enabled="false"/>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

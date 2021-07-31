@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<style name="Widget.AppTheme.Button" parent="Widget.AppCompat.Button">
+    <item name="backgroundTint">@drawable/button_color</item>
+    <item name="android:textColor">@color/white</item>
+    <!--item name="android:textStyle">bold</item-->
+    <item name ="android:fontFamily">@font/helvetica_neue_medium_extended</item>
+
+</style>
+    <style name="HeaderText" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/red</item>
+        <item name ="android:textSize">34sp</item>
+        <item name = "android:textStyle">bold</item>
+        <item name ="android:gravity">center</item>
+        <item name ="android:fontFamily">@font/proxima_nova_alt_regular</item>
+    </style>
+
+    <style name="SecondaryHeaderText" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/red</item>
+        <item name ="android:textSize">24sp</item>
+        <item name = "android:textStyle">bold</item>
+        <!--item name ="android:gravity">center</item-->
+        <item name ="android:fontFamily">@font/proxima_nova_alt_regular</item>
+    </style>
+    <style name="SecondaryWeightText" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/black</item>
+        <item name ="android:textSize">24sp</item>
+        <item name = "android:textStyle">bold</item>
+        <!--item name ="android:gravity">center</item-->
+        <item name ="android:fontFamily">@font/proxima_nova_alt_regular</item>
+    </style>
+    <style name="BodyText" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/black</item>
+        <item name ="android:textSize">12sp</item>
+        <item name = "android:textStyle">bold</item>
+        <!--item name ="android:gravity">center</item-->
+        <item name ="android:fontFamily">@font/merriweather_sans</item>
+        <!--item name ="android:fontFamily">@font/helvetica_neue_medium_extended</item-->
+    </style>
+    <style name="ComponentLabel" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/red</item>
+        <item name ="android:textSize">20sp</item>
+        <item name = "android:textStyle">bold</item>
+        <!--item name ="android:gravity">center</item-->
+        <item name ="android:fontFamily">@font/proxima_nova_alt_regular</item>
+    </style>
+    <style name="CombinationLabel" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/black</item>
+        <item name ="android:textSize">20sp</item>
+        <item name = "android:textStyle">bold</item>
+        <!--item name ="android:gravity">center</item-->
+        <item name ="android:fontFamily">@font/proxima_nova_alt_regular</item>
+    </style>
+    <style name="spinnerStyle" parent="android:Widget.TextView.SpinnerItem">
+        <item name="android:textColor">@color/black</item>
+        <item name ="android:textSize">20sp</item>
+        <item name = "android:textStyle">bold</item>
+        <!--item name ="android:gravity">center</item-->
+        <item name ="android:fontFamily">@font/proxima_nova_alt_regular</item>
+    </style>
+    <style name="spinnerDropDownItemStyle" parent="android:TextAppearance.Widget.TextView.SpinnerItem">
+        <item name="android:textColor">@color/black</item>
+        <item name ="android:textSize">20sp</item>
+        <item name = "android:textStyle">bold</item>
+        <!--item name ="android:gravity">center</item-->
+        <item name ="android:fontFamily">@font/proxima_nova_alt_regular</item>
+    </style>
+
+</resources>

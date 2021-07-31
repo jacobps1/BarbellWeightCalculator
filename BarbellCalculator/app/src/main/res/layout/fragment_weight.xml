@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="fragments.WeightFragment"
+    android:background="@color/light_gray">
+
+    <CheckBox
+        android:id="@+id/noLimitFortyFive"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/limit"
+        app:layout_constraintStart_toStartOf="@+id/middleGuide"
+        app:layout_constraintTop_toBottomOf="@+id/fortyfivelabel"
+        style="@style/BodyText"/>
+
+    <CheckBox
+        android:id="@+id/noLimitThirtyFive"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/limit"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/thirtyfivelabel"
+        style="@style/BodyText"/>
+
+    <TextView
+        android:id="@+id/fortyfivelabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/forty_five"
+        app:layout_constraintStart_toStartOf="@+id/middleGuide"
+        app:layout_constraintTop_toBottomOf="@+id/noLimitTwentyFive"
+        style="@style/SecondaryWeightText"/>
+
+    <TextView
+        android:id="@+id/thirtyfivelabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/thirty_five"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/noLimitTen"
+        style="@style/SecondaryWeightText"/>
+
+    <EditText
+        android:id="@+id/limitFortyFive"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintBaseline_toBaselineOf="@+id/fortyfivelabel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/fortyfivelabel"
+        style="@style/SecondaryWeightText"/>
+
+    <EditText
+        android:id="@+id/limitThirtyFive"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintBaseline_toBaselineOf="@+id/thirtyfivelabel"
+        app:layout_constraintEnd_toStartOf="@+id/middleGuide"
+        app:layout_constraintStart_toEndOf="@+id/thirtyfivelabel"
+        style="@style/SecondaryWeightText"/>
+
+    <EditText
+        android:id="@+id/limitTwentyFive"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintBaseline_toBaselineOf="@+id/twentyfivelabel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/twentyfivelabel"
+        style="@style/SecondaryWeightText"/>
+
+    <CheckBox
+        android:id="@+id/noLimitTwentyFive"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/limit"
+        app:layout_constraintStart_toStartOf="@+id/middleGuide"
+        app:layout_constraintTop_toBottomOf="@+id/twentyfivelabel"
+        style="@style/BodyText"/>
+
+    <TextView
+        android:id="@+id/twentyfivelabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/twenty_five"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@+id/middleGuide"
+        app:layout_constraintTop_toBottomOf="@+id/noLimitFive"
+        style="@style/SecondaryWeightText"/>
+
+    <CheckBox
+        android:id="@+id/noLimitTen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/limit"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tenlabel"
+        style="@style/BodyText"/>
+
+    <EditText
+        android:id="@+id/limitTen"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tenlabel"
+        app:layout_constraintEnd_toStartOf="@+id/middleGuide"
+        app:layout_constraintStart_toEndOf="@+id/tenlabel"
+        style="@style/SecondaryWeightText"/>
+
+    <TextView
+        android:id="@+id/tenlabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/ten"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/noLimitTwoHalf"
+        style="@style/SecondaryWeightText"/>
+
+    <EditText
+        android:id="@+id/limitFive"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintBaseline_toBaselineOf="@+id/fivelabel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/fivelabel"
+        style="@style/SecondaryWeightText"/>
+
+    <CheckBox
+        android:id="@+id/noLimitFive"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/limit"
+        app:layout_constraintStart_toStartOf="@+id/middleGuide"
+        app:layout_constraintTop_toBottomOf="@+id/fivelabel"
+        style="@style/BodyText"/>
+
+    <TextView
+        android:id="@+id/fivelabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/five"
+        app:layout_constraintStart_toStartOf="@+id/middleGuide"
+        app:layout_constraintTop_toBottomOf="@+id/numberOfWeights"
+        style="@style/SecondaryWeightText"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/middleGuide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <TextView
+        android:id="@+id/barLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="@string/bar_label"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        style="@style/SecondaryHeaderText"
+        />
+
+    <RadioGroup
+        android:id="@+id/barRadioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/barLabel">
+
+        <RadioButton
+            android:id="@+id/twentyfiveweight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/forty_four"
+            style="@style/BodyText"/>
+
+        <RadioButton
+            android:id="@+id/thirtythreeweight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/thirty_three"
+            style="@style/BodyText"/>
+
+        <RadioButton
+            android:id="@+id/fortyfourweight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/twenty_five"
+            style="@style/BodyText"/>
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/customLabel"
+        style="@style/BodyText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="60dp"
+        android:fontFamily="@font/merriweather_sans"
+        android:text="@string/customize"
+        app:layout_constraintBottom_toTopOf="@+id/numberOfWeights"
+        app:layout_constraintStart_toEndOf="@+id/barRadioGroup"
+        app:layout_constraintTop_toTopOf="@+id/barRadioGroup" />
+
+    <EditText
+        android:id="@+id/customBarNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+
+        android:inputType="numberDecimal"
+        app:layout_constraintBaseline_toBaselineOf="@+id/customLabel"
+        app:layout_constraintStart_toEndOf="@+id/customLabel"
+        style="@style/BodyText"/>
+
+    <TextView
+        android:id="@+id/numberOfWeights"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:text="@string/limit_weight_label"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/barRadioGroup"
+        style="@style/SecondaryHeaderText"/>
+
+    <TextView
+        android:id="@+id/twohalflabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/two_half"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/numberOfWeights"
+        style="@style/SecondaryWeightText"/>
+
+    <EditText
+        android:id="@+id/limitTwoHalf"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintBaseline_toBaselineOf="@+id/twohalflabel"
+        app:layout_constraintEnd_toStartOf="@+id/middleGuide"
+        app:layout_constraintStart_toEndOf="@+id/twohalflabel"
+        style="@style/SecondaryWeightText"/>
+
+    <CheckBox
+        android:id="@+id/noLimitTwoHalf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/limit"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/twohalflabel"
+        style="@style/BodyText"/>
+
+    <TextView
+        android:id="@+id/weightTargetLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:text="@string/target_label"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/noLimitThirtyFive"
+        style="@style/SecondaryHeaderText"/>
+
+    <EditText
+        android:id="@+id/weightTarget"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        app:layout_constraintBaseline_toBaselineOf="@+id/weightTargetLabel"
+        app:layout_constraintStart_toEndOf="@+id/weightTargetLabel"
+        style="@style/SecondaryWeightText"/>
+
+    <RadioGroup
+        android:id="@+id/includingBarGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/weightTargetLabel">
+
+        <RadioButton
+            android:id="@+id/includeBarRadio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/include_bar_menu"
+            style="@style/BodyText"/>
+
+        <RadioButton
+            android:id="@+id/notIncludeBarRadio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/not_include"
+            style="@style/BodyText"/>
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/calculateWeightButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/calculate_label"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:enabled="false"
+        style="@style/Widget.AppTheme.Button"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

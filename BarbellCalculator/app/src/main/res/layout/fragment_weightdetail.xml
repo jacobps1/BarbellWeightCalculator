@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="fragments.WeightDetailFragment"
+    android:background="@color/light_gray">
+
+    <TextView
+        android:id="@+id/weightDetailTitleLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/weight_combinations"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        style="@style/SecondaryHeaderText"/>
+
+    <RadioGroup
+        android:id="@+id/filterRadioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/weightDetailTitleLabel"
+        >
+
+        <RadioButton
+            android:id="@+id/twoHalfFilter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/two_half"
+            style="@style/BodyText"/>
+
+        <RadioButton
+            android:id="@+id/fiveFilter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/five"
+            style="@style/BodyText"/>
+
+        <RadioButton
+            android:id="@+id/tenFilter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/ten"
+            style="@style/BodyText"/>
+
+        <RadioButton
+            android:id="@+id/twentyFiveFilter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/twenty_five"
+            style="@style/BodyText"/>
+
+        <RadioButton
+            android:id="@+id/thirtyFiveFilter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/thirty_five"
+            style="@style/BodyText"/>
+
+        <RadioButton
+            android:id="@+id/fortyFiveFilter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/forty_five"
+            style="@style/BodyText"/>
+
+        <RadioButton
+            android:id="@+id/allFilter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/all_filter"
+            android:checked="true"
+            style="@style/BodyText"/>
+    </RadioGroup>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/exerciseRecycler"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/light_gray"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/filterRadioGroup" />
+</androidx.constraintlayout.widget.ConstraintLayout>

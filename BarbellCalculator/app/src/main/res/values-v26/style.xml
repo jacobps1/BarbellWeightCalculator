@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="TitleButtons" parent="Widget.AppCompat.Button">
+        <item name="backgroundTint">@drawable/button_color</item>
+        <item name="android:textColor">@color/white</item>
+    <!--item name="android:textStyle">bold</item-->
+        <item name ="android:fontFamily">@font/helvetica_neue_medium_extended</item>
+        <item name="android:autoSizeTextType">uniform</item>
+        <item name="android:gravity">center</item>
+        <item name="android:autoSizeMaxTextSize">100sp</item>
+        <item name="android:autoSizeMinTextSize">2sp</item>
+
+    </style>
+
+
+    <style name="TitleText" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/red</item>
+        <item name="android:autoSizeTextType">uniform</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:gravity">center</item>
+        <item name="android:autoSizeMaxTextSize">100sp</item>
+        <item name="android:autoSizeMinTextSize">2sp</item>
+
+        <item name="android:fontFamily">@font/proxima_nova_alt_regular</item>
+    </style>
+</resources>

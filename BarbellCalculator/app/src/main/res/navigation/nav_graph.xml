@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/titleFragment">
+
+    <fragment
+        android:id="@+id/titleFragment"
+        android:name="com.example.barbellweightcalculator.fragments.TitleFragment"
+        android:label="TitleFragment" >
+        <action
+            android:id="@+id/action_titleFragment_to_weightFragment"
+            app:destination="@id/weightFragment" />
+        <action
+            android:id="@+id/action_titleFragment_to_workoutFragment"
+            app:destination="@id/workoutFragment" />
+        <action
+            android:id="@+id/action_titleFragment_to_liftFragment"
+            app:destination="@id/liftFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/weightFragment"
+        android:name="com.example.barbellweightcalculator.fragments.WeightFragment"
+        android:label="WeightFragment" >
+        <action
+            android:id="@+id/action_weightFragment_to_weightDetailFragment"
+            app:destination="@id/weightDetailFragment"
+            app:popUpTo="@id/weightFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/workoutFragment"
+        android:name="com.example.barbellweightcalculator.fragments.WorkoutFragment"
+        android:label="WorkoutFragment" >
+        <action
+            android:id="@+id/action_workoutFragment_to_createWorkoutFragment"
+            app:destination="@id/createWorkoutFragment"
+            app:popUpTo="@id/workoutFragment" />
+        <action
+            android:id="@+id/action_workoutFragment_to_workoutDetailFragment"
+            app:destination="@id/workoutDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/weightDetailFragment"
+        android:name="com.example.barbellweightcalculator.fragments.WeightDetailFragment"
+        android:label="WeightDetailFragment" >
+        <action
+            android:id="@+id/action_weightDetailFragment_to_exerciseFragment"
+            app:destination="@id/exerciseFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/exerciseFragment"
+        android:name="com.example.barbellweightcalculator.fragments.ExerciseFragment"
+        android:label="ExerciseFragment" >
+        <action
+            android:id="@+id/action_exerciseFragment_to_createWorkoutFragment"
+            app:destination="@id/createWorkoutFragment"
+            app:popUpTo="@id/exerciseFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/createWorkoutFragment"
+        android:name="com.example.barbellweightcalculator.fragments.CreateWorkoutFragment"
+        android:label="CreateWorkoutFragment" />
+    <fragment
+        android:id="@+id/workoutDetailFragment"
+        android:name="com.example.barbellweightcalculator.fragments.WorkoutDetailFragment"
+        android:label="WorkoutDetailFragment" />
+    <fragment
+        android:id="@+id/liftFragment"
+        android:name="com.example.barbellweightcalculator.fragments.LiftFragment"
+        android:label="LiftFragment" >
+        <action
+            android:id="@+id/action_liftFragment_to_exerciseFragment"
+            app:destination="@id/exerciseFragment" />
+    </fragment>
+</navigation>

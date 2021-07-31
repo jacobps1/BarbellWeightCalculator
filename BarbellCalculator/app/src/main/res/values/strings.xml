@@ -1,0 +1,60 @@
+<resources>
+    <string name="app_name">Barbell Weight Calculator</string>
+    <string name="titleLabel">Barbell Weight Calculator</string>
+    <string name="calculate_label">Calculate Weight Combinations</string>
+    <string name="workout_label">View Saved Workouts</string>
+    <string name="calculate_lift">Calculate Lift</string>
+    <string name="bar_label">Bar Size (lbs):</string>
+    <string name="forty_four">44</string>
+    <string name="thirty_three">33</string>
+    <string name="twenty_five">25</string>
+    <string name="customize">Enter Custom Size</string>
+    <string name="limit_weight_label">Enter the # of Plates (lbs) Available (Blank For Zero):</string>
+    <string name="two_half">2.5</string>
+    <string name="five">5</string>
+    <string name="ten">10</string>
+    <string name="thirty_five">35</string>
+    <string name="forty_five">45</string>
+    <string name="limit">No Limit</string>
+    <string name="target_label">Enter Desired Lift Weight</string>
+    <string name="include_bar">Including Bar %.1f</string>
+    <string name="include_bar_menu">Including Bar</string>
+    <string name="not_include">Not Including Bar</string>
+    <string name="error_message_bar">Invalid Bar Weight</string>
+    <string name="error_message_lift">Invalid Lift Total</string>
+    <string name="error_message_target">Invalid Target Weight</string>
+    <string name="weight_combinations">Weight Combinations (Per Side)</string>
+    <string name="all_filter">Show All</string>
+    <string name="add_combo">Add Combination</string>
+    <string name="combo_label">Weight Combination Sum For %.1f</string>
+    <string name="weight_combo">The Following Combination Should Go On Both Sides of the Bar:</string>
+    <string name="placeholder">Placeholder</string>
+    <string name="new_exercise">Create a New Exercise</string>
+    <string name="enter_name_exercise">Enter Name of Exercise</string>
+    <string name="choose_workout">Choose Workout</string>
+    <string name="or">OR</string>
+    <string name="create_new_workout">Create New Workout</string>
+    <string name="create_exercise">Create Exercise</string>
+    <string name="combination">Combination:</string>
+    <string name="enter_name_workout">Enter Name of Workout</string>
+    <string name="invalid_exercise_name">Invalid Exercise Name</string>
+    <string name="invalid_workout_name">Invalid Workout Name</string>
+    <string name="workout_name_taken">Workout Name Already Exists</string>
+    <string name="list_of_workouts">List of Workouts</string>
+    <string name="view_exercises">View Exercises</string>
+    <string name="delete_workout">Delete Workout</string>
+    <string name="number_exercises">Number of Exercises: %d</string>
+    <string name="delete_exercise">Delete Exercise</string>
+    <string name="delete_all">Delete All</string>
+    <string name="exercises_in">Exercises in %s</string>
+    <string name="exercise_name_and_weight">%s (# of lbs = %.1f)</string>
+    <string name="warning">WARNING</string>
+    <string name="delete_every_exercise">Are you sure you want to delete every exercise?</string>
+    <string name="delete_current_exercise_message">Are you sure you want to delete %s?</string>
+    <string name="delete_every_workout">Are you sure you want to delete every workout?</string>
+    <string name="lift_total">Lift Total:</string>
+    <string name="save_lift">Save Lift</string>
+    <string name="enter_total_lift_plate">Enter the # of Plates (lbs) on One Side of the Bar (Blank For Zero):</string>
+
+
+</resources>
