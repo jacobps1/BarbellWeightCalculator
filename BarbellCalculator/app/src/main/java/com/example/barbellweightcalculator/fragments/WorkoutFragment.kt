@@ -39,7 +39,7 @@ class WorkoutFragment: Fragment() {
 
         //observer that sets the list of workouts into the adapter
         model.allWorkouts.observe(viewLifecycleOwner, {workouts ->
-            adapter.setWorkouts(workouts as MutableList<Workout>)
+            adapter.setWorkouts(workouts)
         })
         return inflater.inflate(R.layout.fragment_workout, container, false)
 
@@ -102,9 +102,8 @@ class WorkoutFragment: Fragment() {
         private var workouts = emptyList<Workout>()
 
         //sets the list of workouts displayed in the RecyclerView
-        internal fun setWorkouts(workouts: MutableList<Workout>) {
-            //reverse the list so that it is in order from recently updated to least recently updated
-            workouts.reverse()
+        internal fun setWorkouts(workouts: List<Workout>) {
+            
             this.workouts = workouts
 
             notifyDataSetChanged()
