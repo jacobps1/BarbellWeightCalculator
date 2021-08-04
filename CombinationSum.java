@@ -84,13 +84,13 @@ public class CombinationSum{
 			
 			//create a deep copy of the currentSums list and add the current entry to it
 			ArrayList<Integer> partial_rec = new ArrayList<Integer>(currentSums);
-            partial_rec.add(entry);
+            		partial_rec.add(entry);
             
-            //recursively call the method
-            find_sums_helper(reducedList,target,partial_rec);
+            		//recursively call the method
+            		find_sums_helper(reducedList,target,partial_rec);
             
-            //remove the duplicate current value from the list
-            reducedList.remove(0);
+            		//remove the duplicate current value from the list
+            		reducedList.remove(0);
 			
 		}
 		
